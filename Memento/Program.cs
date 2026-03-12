@@ -10,6 +10,7 @@ namespace Memento
     {
         static void Main(string[] args)
         {
+            
         }
     }
 }
