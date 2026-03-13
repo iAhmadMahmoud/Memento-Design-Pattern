@@ -7,21 +7,6 @@ using System.Threading.Tasks;
 namespace Memento.Game.With
 {
 
-    //Memento(stores game state)
-    class GameMemento
-    {
-        public int Level { get; }
-        public int Health { get; }
-        public string Position { get; }
-
-        public GameMemento(int level, int health, string position)
-        {
-            Level = level;
-            Health = health;
-            Position = position;
-        }
-    }
-
 
     //Originator(Game)
     class Game
@@ -47,6 +32,22 @@ namespace Memento.Game.With
             Console.WriteLine($"Level: {Level}, Health: {Health}, Position: {Position}");
         }
     }
+
+    //Memento(stores game state)
+    class GameMemento
+    {
+        public int Level { get; }
+        public int Health { get; }
+        public string Position { get; }
+
+        public GameMemento(int level, int health, string position)
+        {
+            Level = level;
+            Health = health;
+            Position = position;
+        }
+    }
+
 
 
     //Caretaker(Save Manager)
